@@ -15,16 +15,18 @@ body {
     line-height: 1.6;
 }
 
-.analysis-block {
-    max-width: 800px; /* Keeps line length readable */
-    margin: 40px 0;
+.image-grid-wrapper {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
 }
 
 /* Bullet List Styling */
 .problem-list {
     margin-bottom: 30px;
     padding-left: 20px;
-    list-style: none; /* We will use custom bullets */
+    list-style: none;
 }
 
 .problem-list li {
@@ -96,6 +98,11 @@ body {
     width: 100%;
     border-radius: 16px;
     margin-top: 60px;
+}
+
+.cs-sub-img {
+    width: 50%;
+    border-radius: 8px;
 }
 
 /* --- MAIN LAYOUT (Sidebar + Content) --- */
