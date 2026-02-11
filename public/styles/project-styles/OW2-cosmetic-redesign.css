@@ -15,11 +15,76 @@ body {
     line-height: 1.6;
 }
 
-.image-grid-wrapper {
+/* This forces every direct child of the analysis block into the center */
+.analysis-block > * {
+    grid-column: 2;
+}
+
+/* Then keep your "breakout" rule for the image wrapper */
+.analysis-block .image-grid-wrapper {
     grid-column: 1 / -1;
+}
+
+.analysis-block {
+  display: grid;
+  /* Fixed 700px middle. side columns (1fr) split the remaining space. */
+  grid-template-columns: 1fr 700px 1fr;
+  width: 100%;
+  justify-content: center;
+}
+
+/* On smaller screens, we need to make sure 700px doesn't break the layout */
+@media (max-width: 768px) {
+  .analysis-block {
+    grid-template-columns: 20px 1fr 20px; /* Small gutters for mobile */
+  }
+}
+
+.analysis-block > h3,
+.analysis-block > p {
+  grid-column: 2; /* Force text into the 700px slot */
+  text-align: left; /* Or center, depending on your vibe */
+  width: 100%; 
+}
+
+.image-grid-wrapper {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px; /* Added a bit more space for text */
+    row-gap: 25px;    /* Extra space for the caption */
+    width: 120%;
+    margin-left: -10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the figure as the grid container */
+.cs-fig {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the image inside the figure */
+.cs-fig img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    /* Optional: add a slight shadow to make them pop */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Style the subtitle */
+.cs-fig figcaption {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--secondary-gray); /* Or a lighter grey */
+    text-align: center;
+    margin-top: 8px; /* Space between img and text */
+    font-style: italic;
+    opacity: 0.8;
 }
 
 /* Bullet List Styling */
@@ -100,12 +165,6 @@ body {
     margin-top: 60px;
 }
 
-.cs-sub-img {
-    width: 50%;
-    border-radius: 8px;
-}
-
-/* --- MAIN LAYOUT (Sidebar + Content) --- */
 .cs-container {
     display: flex;
     max-width: 800px;
