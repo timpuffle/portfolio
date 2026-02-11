@@ -113,6 +113,29 @@ body {
     margin-left: -1em;
 }
 
+.solution-list {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.solution-list li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: var(--primary-black);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Custom Blue Bullet */
+.solution-list li::before {
+    content: "•";
+    color: black;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 /* Paragraph Styling */
 .analysis-text {
     font-family: 'Inter', sans-serif;
