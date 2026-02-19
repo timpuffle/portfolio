@@ -119,9 +119,23 @@
 }
 
 /* Project Grid */
+
+.card-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.card-desc {
+    font-family: 'Inter', sans-serif;
+    color: var(--secondary-gray);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 .section-label {
     font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     border-bottom: 2px solid var(--primary-black);
     display: inline-block;
     margin-bottom: 40px;
@@ -148,6 +162,14 @@
     transition: 0.4s;
 }
 
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: center top;
+}
+
 .project-card:hover .project-img-container {
     transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -161,6 +183,40 @@
 .project-info p {
     color: var(--secondary-gray);
     font-size: 0.9rem;
+}
+
+.site-footer {
+    background-color: var(--primary-black);
+    padding: 60px 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-cta {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-email {
+    font-size: 1.5rem;
+    color: blue;
+    text-decoration: underline;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #888;
+    border-top: 1px solid #333;
+    padding-top: 20px;
 }
 
 /* Responsiveness */
