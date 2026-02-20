@@ -101,23 +101,6 @@
     max-width: 400px;
     margin-bottom: 30px;
 }
-
-.cta-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: var(--primary-black);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.cta-btn:hover {
-    background: var(--accent-blue);
-    transform: translateY(-2px);
-}
-
 /* Project Grid */
 
 .card-title {
