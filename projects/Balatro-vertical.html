@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study | Overwatch 2 Cosmetic Customization Redesign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/project-styles/Balatro-vertical.css">
+</head>
+<body>
+
+        <nav class="navbar">
+        <a href="../index.html" class="logo-link">
+            <img src="../images/logo-black.png" alt="Tim Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../work.html">Work</a></li>
+            <!-- <li><a href="../resume.html">Resume</a></li> -->
+            </ul>
+    </nav>
+
+    <section class="case-study-template">
+        <header class="cs-hero">
+            <h1 class="cs-title">Balatro: Adapted for Vertical Mobile Gameplay</h1> 
+                <p class="cs-subtitle">Adapting the game to enhance flexibility, accessibility, and user-preference.</p>
+            <div class="cs-meta">
+                <div class="meta-item"><strong>Role</strong><br>UX/UI Designer</div>
+                <div class="meta-item"><strong>Timeline</strong><br>2 Weeks</div>
+                <div class="meta-item"><strong>Tools</strong><br>Figma and Aseprite</div>
+            </div>
+
+            <img src="../images/HOME-mockup.png" alt="Final Mockup 1" class="cs-main-img">
+        </header>
+
+        <div class="cs-container">
+            <!-- <nav class="cs-sidebar">
+                <ul>
+                    <li><a href="#problem">The Problem</a></li>
+                    <li><a href="#process">The Process</a></li>
+                    <li><a href="#solution">The Solution</a></li>
+                </ul>
+            </nav> -->
+
+            <main class="cs-content">
+                <section id="problem" class="cs-section">
+                    <h2>The Problem</h2>
+                    <div class="analysis-block">
+                        <ul class="problem-list">
+                            <li>Horizontal Constraint</li>
+                            <li>Unreached Potential</li>
+                        </ul>
+
+                        <p class="analysis-text">
+                            The current Balatro mobile experience is a faithful landscape port that excels for 
+                            dedicated, two-handed sessions. However, the horizontal-only constraint creates a 
+                            "contextual barrier" for players in mobile-first environments, such as commuting 
+                            or multitasking, where portrait orientation is the natural ergonomics of the device.
+                        </p>
+
+                        <p class="analysis-text">
+                            This redesign wasn't done to fix the horizontal playstyle, but rather to enhance the game’s 
+                            reach by offering a vertical alternative. The goal was to translate the high-density information 
+                            into a layout optimized for quick, one-handed interaction without compromising the game's 
+                            hypnotic visual depth.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="process" class="cs-section">
+                    <h2>The Process</h2>
+                    <div class="cs-grid">
+                        <div class="cs-grid-item">
+                            <h3>01. Rapid Wireframing</h3>
+                            <p>Using wireframing as a brainstorming method, alongside research of the current UI.</p>
+                        </div>
+                        <div class="cs-grid-item">
+                            <h3>02. Visual Asset Translation</h3>
+                            <p>Translating and recreating UI art elements to match the iconic Balatro style.</p>
+                        </div>
+                        <div class="cs-grid-item">
+                            <h3>03. UI Mockups</h3>
+                            <p>Make the transition between wireframes and a polished UI.</p>
+                        </div>
+                    </div>
+                    <div class="analysis-block">
+                        <h3>Rapid Wireframing</h3>
+                        <div class="image-grid-wrapper">
+                            <div class="image-grid-wrapper">
+                                <figure class="cs-fig">
+                                    <img src="../images/HOME-wf.png" alt="1st Iteration 1">
+                                    <figcaption>Vertical screen 1 - wireframe</figcaption>
+                                </figure>
+
+                                <figure class="cs-fig">
+                                    <img src="../images/BLIND SELECTION-wf.png" alt="1st Iteration 2">
+                                    <figcaption>Vertical screen 2 - wireframe</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <p class="analysis-text">
+                            Given the short sprint timeline, I moved quickly into lo-fi wireframing to solve 
+                            the spatial puzzle of a vertical Balatro. I merged a hypothetical “brainstorming” phase and the initial 
+                            wireframing process to get my ideas into Figma faster. I prioritized the "Golden Ratio" of mobile reach, 
+                            placing the player's hand (the most interactive element) in the bottom third of the screen. I decided to 
+                            keep the layout as similar to the horizontal view as possible. I had to shrink some elements slightly to 
+                            avoid cramming. 
+                        </p>
+                        <h3>Visual Asset Translation and Mockups</h3>
+                        <p class="analysis-text">
+                            A key part of the process was maintaining the game's iconic "CRT-pop" aesthetic. To get the pixelized elements, 
+                            I used Aseprite to hand draw certain features. With this tool, combined with copying over some cropped screenshots, 
+                            I managed to build almost identical looking Balatro elements in my desired vertical layout. I moved all of the 
+                            informational features to the top of the screen, as the player interacts with that block less (options and run-info occasionally), 
+                            and kept all of the core gameplay buttons at the bottom, in comfortable reach of the thumb. 
+                        </p>
+                        </div>
+                </section>
+
+                <section id="solution" class="cs-section">
+                    <h2>The Solution</h2>
+                    <img src="../images/HOME-mockup.png" alt="Final Mockup 1" class="cs-main-img">
+                    <img src="../images/BLIND SELECTION-mockup.png" alt="Final Mockup 2" class="cs-main-img">
+                    <img src="../images/GAMEPLAY-mockup.png" alt="Final Mockup 3" class="cs-main-img">
+
+                    <h3>Ergonomic Command Center</h3>
+
+                    <p>The core of the redesign is a bottom-weighted interaction model. By anchoring the "Play Hand,” "Discard," 
+                        and the player’s hand of cards within the natural thumb zone, the UI transforms from a two-handed commitment 
+                        into a complimentary one-handed experience. This allows the player to cycle through rounds with minimal physical 
+                        travel across the screen, perfect for mobile-first environments.</p>
+
+                    <h3>Visual Information Hierarchy</h3>
+
+                    <p>To avoid a "crammed" aesthetic, the redesign utilizes a top-down stack that prioritizes visibility without 
+                        sacrificing the game's complexity:</p>
+
+                    <ul class="solution-list">
+                            <li><strong>The Info Header: </strong>Non-interactive and non-core elements, including the "Run Info," "Options," 
+                                are consolidated at the top of the frame. This keeps the scoring math visible at all times while clearing the 
+                                way for gameplay.</li>
+
+                            <li><strong>Asset Fidelity: </strong> By utilizing custom Aseprite drawings and precise scaling, the "CRT-pop" and 
+                                pixel-art integrity remain sharp. The transition to vertical feels like a native mode rather than a compressed port, 
+                                preserving the "hypnotic visual depth" that defines the Balatro brand.</li>
+
+                            <li><strong>Familiar Anchors: </strong>To ensure a frictionless transition for existing players, the relative positioning 
+                                of Jokers and Consumables remains consistent with the horizontal layout, simply scaled to fit the vertical aspect ratio.</li>
+                        </ul>
+                    
+                </section>
+            </main>
+        </div>
+    </section>
+
+</body>
+</html>
