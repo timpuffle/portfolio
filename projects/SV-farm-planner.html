@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study | Stardew Valley: In-Game Farm Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/project-styles/SV-farm-planner.css">
+</head>
+<body>
+
+        <nav class="navbar">
+        <a href="../index.html" class="logo-link">
+            <img src="../images/logo-black.png" alt="Tim Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../work.html">Work</a></li>
+            <!-- <li><a href="../resume.html">Resume</a></li> -->
+            </ul>
+    </nav>
+
+    <section class="case-study-template">
+        <header class="cs-hero">
+            <h1 class="cs-title">Stardew Valley: In-Game Farm Planner</h1> 
+                <p class="cs-subtitle">Facilitating long-term strategy in open-ended sandbox environments.</p>
+            <div class="cs-meta">
+                <div class="meta-item"><strong>Role</strong><br>UX/UI Designer and Researcher</div>
+                <div class="meta-item"><strong>Timeline</strong><br>3 Weeks</div>
+                <div class="meta-item"><strong>Tools</strong><br>Figma<br>Aseprite<br>stardewplanner.com</div>
+            </div>
+
+            <img src="../images/SVFP-Mockup.png" alt="Final Mockup" class="cs-main-img">
+        </header>
+
+        <div class="cs-container">
+            <main class="cs-content">
+                <section id="problem" class="cs-section">
+                    <h2>The Problem</h2>
+                    <div class="analysis-block">
+                        <ul class="problem-list">
+                            <li>Overwhelmingly Large Tasks</li>
+                            <li>Burnout and Fatigue</li>
+                            <li>Immersion Breaking Third-Party Programs</li>
+                        </ul>
+
+                        <p class="analysis-text">
+                            Something that has always been a barrier for me when playing Stardew Valley, 
+                            and other games of a similar genre, is how overwhelming the overarching goal(s) feels. 
+                            The start of a Stardew Valley playthrough always feels motivating enough because there 
+                            are a lot of short term goals: clean up the messy farm, meet all the people, get a basic 
+                            source of revenue, etc. But when it comes time to start leveling up the farming operations 
+                            (while still factoring in for aesthetics and vibes, of course) it gets a little daunting.
+                        </p>
+
+                        <p class="analysis-text">
+                            Currently, players who want to optimize their layouts must rely on external, 
+                            third-party web tools. While these tools are powerful, they create a jarring 
+                            "tab-hopping" experience that breaks immersion. Players are forced to manually 
+                            translate coordinates from a browser to their game, leading to frequent errors, 
+                            wasted in-game days, and the "finicky" frustration of managing two separate interfaces. 
+                        </p>
+
+                        <p class="analysis-text">
+                            By integrating a planning tool directly into the game’s UI, we can bridge 
+                            the gap between aspiration and execution. My goal was to design a feature that feels 
+                            native to the Stardew Valley experience—one that allows players to blueprint their dream 
+                            farm without the cognitive load of leaving the game world. 
+ 
+                        </p>
+                    </div>
+                </section>
+
+                <section id="process" class="cs-section">
+                    <h2>The Process</h2>
+                    <div class="cs-grid">
+                        <div class="cs-grid-item">
+                            <h3>01. Brainstorming and Low-Fi Wireframing</h3>
+                            <p>Using wireframing as a brainstorming method, alongside research of the current UI.</p>
+                        </div>
+                        <div class="cs-grid-item">
+                            <h3>02. Mid-Fi Wireframing</h3>
+                            <p>Building and implementing a style guide through analysis of the in-game design and art style.</p>
+                        </div>
+                        <div class="cs-grid-item">
+                            <h3>03. Hi-Fidelity UI Mockup</h3>
+                            <p>Make the transition between wireframes and a polished UI, while honoring the style of the game.</p>
+                        </div>
+                    </div>
+                    <div class="analysis-block">
+                        
+                        <div class="image-grid-wrapper">
+                            <div class="image-grid-wrapper">
+                                <figure class="cs-fig">
+                                    <img src="../images/wireframe 2.png" alt="1st Stage">
+                                    <figcaption>First stage wireframe</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <h3>Brainstorming and Low-Fi Wireframing</h3>
+                        <p class="analysis-text">
+                            I began by imagining what this interface might look like in game and what sort of features are going 
+                            to be visible alongside it. By taking inspiration from an active third-party farm planner, stardewplanning.com, 
+                            I place the UI to the right of a large, zoomed out version of an empty Stardew Valley farm. I blocked out areas 
+                            for essential features: name of the active farm plan, an area for filtering the type of item you want to place down, 
+                            a grid to display said items, and a save and exit button. The resource calculator feature was an idea I developed from 
+                            my own habit of adding up all of the resources and items I will need to complete a project in any given sandbox game.  
+                        </p>
+
+                        <div class="image-grid-wrapper">
+                            <div class="image-grid-wrapper">
+                                <figure class="cs-fig">
+                                    <img src="../images/midfi 1.png" alt="2nd Stage">
+                                    <figcaption>First iteration</figcaption>
+                                </figure>
+                            </div>
+                            <div class="image-grid-wrapper">
+                                <figure class="cs-fig">
+                                    <img src="../images/midfi 2.png" alt="2nd Stage">
+                                    <figcaption>Second iteration</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <h3>Mid-Fidelity Wireframing</h3>
+                        <p class="analysis-text">
+                            Once I was satisfied with the layout after a few iterations, I moved on to color palettes and some more artistic design choices. 
+                            The next obstacle was making this interface fit into the world of Stardew Valley, so I opened up the game to look at the current 
+                            interface designs and artwork. I decided to base my designs off of that of the in-game inventory UI. I color picked the main colors 
+                            and started adding them to my lo-fi wireframes, while iterating and updating the layout as I went.
+                        </p>
+                        <h3>Hi-Fidelity UI Mockup</h3>
+                        <p class="analysis-text">
+                            The bulk of this project was spent in Aseprite, my choice of pixel art software. Here I built my interface panel pixel by pixel, 
+                            all the while referencing my in-game screen captures to make sure I was remaining true to the game’s art style. The only pixels 
+                            not handplaced by me was the lettering in the “Farm Plan #1”, “Cancel”,  “Save and Quit”, and the sprite icons that I pulled from 
+                            the Stardew Valley Wikipedia.
+                        </p>
+                        </div>
+                </section>
+
+                <section id="solution" class="cs-section">
+                    
+                    <img src="../images/SVFP-Mockup.png" alt="Final Mockup 1" class="cs-main-img">
+
+                    <h2>The Solution</h2>
+
+                    <p>The final result is a native, in-game planning interface that transforms farm management from a daunting chore 
+                        into a creative sandbox. By utilizing a diegetic UI design the tool maintains player immersion while providing 
+                        high-level utility. </p>
+
+                    <h3>Key Features include:</h3>
+
+                    <ul class="solution-list">
+                            <li><strong>Native Visual Continuity: </strong>By mimicking the hand-drawn, pixel-perfect aesthetic of the original inventory system, 
+                                the tool feels like a natural extension of the player’s toolkit rather than a disruptive "mod."</li>
+                            <li><strong>Integrated Resource Calculator: </strong> A panel that tracks the total wood, stone, seeds, and 
+                                specialized items needed for the current plan. This would eliminate the need for manual math and reduces the cognitive load 
+                                of large-scale renovations.</li>
+                            <li><strong>Category-Based Asset Browsing: </strong> A streamlined filtering system that organizes game assets (buildings, crops, fences, etc.) 
+                                into intuitive tabs, allowing for rapid experimentation without cluttering the screen.</li>
+                            <li><strong>The Planning: </strong> A low-stakes environment where players can visualize endgame goals early on, providing a clear 
+                                roadmap that mitigates mid-game burnout and fatigue.</li>
+                    </ul>
+                    
+                    <P>Ultimately, this project bridges the gap between aspiration and execution, allowing players to spend less time 
+                        tab-hopping and more time cultivating their perfect virtual life.</P>
+
+                </section>
+            </main>
+        </div>
+    </section>
+
+</body>
+</html>
