@@ -85,31 +85,21 @@
     position: relative;
     flex: 1;
     max-width: 50%;
+
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    padding: 0 0 0 20px;
+    box-shadow: -10px 10px 0px blue;
 }
 
 .hero-right {
     flex: 1;
 }
 
-.alignment-line {
-    position: relative;
-    bottom: 4px;
-    left: 0;
-    
-    width: 98vw; 
-    height: 2px;
-    
-    background-color: black;
-    z-index: -1;
-    
-    margin-left: -23vw;
-    overflow:hidden;
-}
-
 .headshot-img {
     width: 75%;
     height: auto;
-    border: 4px solid var(--primary-black);
+    display: block;
 }
 
 .hero-title {
