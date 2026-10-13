@@ -9,6 +9,7 @@
     width: 100%; 
     box-sizing: border-box;
     padding: 20px 5%;
+    height: 15%;
     
     position: fixed;
     top: 0;
@@ -60,7 +61,6 @@
 
 .nav-links a:hover {
     border-bottom: 2px solid black;
-    padding-bottom: 4px;
     color: black;
 }
 
@@ -133,8 +133,8 @@
 
 .project-section {
     max-width: 1100px;
-    margin: 0 auto; /* This centers the section horizontally */
-    padding: 0 5%;   /* Matches your hero section padding */
+    margin: 0 auto;
+    padding: 0 5%;
     align-items: center;
 }
 
@@ -196,7 +196,7 @@
     height: 100%;
     object-fit: cover;
 
-    object-position: center top;
+    object-position: center;
 }
 
 .project-img-container:hover {
